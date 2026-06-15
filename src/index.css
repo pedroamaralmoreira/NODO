@@ -1,11 +1,18 @@
 @import './styles/design-system.css';
 
 /* Override some default Vite styles */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 #root {
   max-width: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
   text-align: left;
+  overflow-x: hidden;
 }
 
 /* Base App Layout */
@@ -15,6 +22,7 @@
   min-height: 100vh;
   width: 100%;
   background-color: var(--color-bg);
+  overflow-x: hidden;
 }
 
 .content-area {
@@ -54,5 +62,7 @@
     padding: 16px;
     padding-bottom: 90px; /* space for bottom nav */
     box-shadow: none;
+    width: 100%;
+    overflow-x: hidden;
   }
 }
