@@ -7,6 +7,7 @@ import FeedbackScreen from './screens/FeedbackScreen'
 import ModuleCompletionScreen from './screens/ModuleCompletionScreen'
 import AboutScreen from './screens/AboutScreen'
 import Sidebar from './components/Sidebar'
+import BottomNav from './components/BottomNav'
 import { moduleData } from './data/moduleData'
 
 function App() {
@@ -87,7 +88,7 @@ function App() {
 
   return (
     <div className="app-container">
-      {/* Sidebar for Navigation */}
+      {/* Sidebar for Navigation (Desktop) */}
       {currentScreen !== 'activity' && currentScreen !== 'feedback' && currentScreen !== 'completion' && (
         <Sidebar currentScreen={currentScreen} setScreen={setCurrentScreen} />
       )}
@@ -95,6 +96,11 @@ function App() {
       <div className="content-area container">
         {renderScreen()}
       </div>
+
+      {/* Bottom Nav for Navigation (Mobile) */}
+      {currentScreen !== 'activity' && currentScreen !== 'feedback' && currentScreen !== 'completion' && (
+        <BottomNav currentScreen={currentScreen} setScreen={setCurrentScreen} />
+      )}
     </div>
   )
 }
