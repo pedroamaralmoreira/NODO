@@ -1,8 +1,10 @@
 .about-container {
   padding: 60px 40px;
+  width: 100%;
   max-width: 1000px;
   margin: 0 auto;
   animation: fadeIn 0.5s ease-out;
+  box-sizing: border-box;
 }
 
 .about-hero {
@@ -36,11 +38,14 @@
   grid-template-columns: 3fr 2fr;
   gap: 30px;
   margin-bottom: 60px;
+  width: 100%;
 }
 
 .about-card {
   padding: 40px;
   border-radius: 24px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .card-problem {
@@ -118,6 +123,8 @@
 
 .about-section {
   margin-bottom: 80px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .section-title {
@@ -166,6 +173,8 @@
   padding: 50px 40px;
   color: white;
   box-shadow: 0 20px 40px rgba(139, 92, 246, 0.2);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .methodology-title {
@@ -182,6 +191,7 @@
   justify-content: space-between;
   overflow-x: auto;
   padding-bottom: 20px;
+  width: 100%;
 }
 
 .methodology-step {
